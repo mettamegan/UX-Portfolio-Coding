@@ -2,8 +2,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(190, 244, 253);
+    background: rgb(0,0,0,0.7);
     padding: 20px;
+}
+
+span {
+  color: white;
+  font-family: 'Lato', Arial, Helvetica, sans-serf;
+  font-weight: bold;
 }
 
 .navMenu {
@@ -15,58 +21,74 @@ nav {
     margin-left: 10px;
 }
 
-/* Column styles */
-.column {
-    display: flex;
-    height: 1200px;
-    width: 800px;
-    flex-direction: column;
-    margin: 0 auto;
+.navMenu li a {
+    color: white;
+    font-family: 'Lato', Arial, Helvetica, sans-serf;
+    font-weight: bold;
+}
+
+.caseStudyGrid {
+    display: grid;
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
   }
-  
-  .CaseStudy1, .CaseStudy2, .CaseStudy3 {
+  .caseStudy1, .caseStudy2, .caseStudy3, .caseStudy4 {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    margin-bottom: 20px;
   }
-  .CaseStudy1 {
-    margin-top:20px;
-    background-image: url("../images/steak.png");
+  .caseStudy1 {
+    background-image: url("../images/Girlstart\ Home\ Image.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .caseStudy2 {
+    background-image: url("../images/craftpop4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .caseStudy3 {
+    background-image: url("../images/APLdesktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   
-  }
-  .CaseStudy2 {
-    background-image: url("../images/soup.png");
+  .caseStudy4 {
+    background-image: url("../images/local.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
-  .CaseStudy3 {
-    background-image: url("../images/cheesecake.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
   .text {
     background: rgb(0,0,0,0.7);
     width: 100%;
     padding: 20px 40px;
     color: white;
+    font-weight: bold;
   }
   .text p {
     color: rgba(255, 255, 255, 0.7);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serf;
+    font-weight: bold;
   }
   .text h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serf;
   }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(190, 244, 253);
+    background-color: rgb(0,0,0,0.7);
+    width: 100%;
     padding: 20px;
+    font-family: 'Lato', Arial, Helvetica, sans-serf;
+    color: white;
+    font-weight: bold;
 }
