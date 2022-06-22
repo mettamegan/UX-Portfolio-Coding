@@ -105,14 +105,12 @@ span {
     gap: 40px;
     padding: 40px;
   }
-
   .caseStudy1, .caseStudy2, .caseStudy3, .caseStudy4 {
     height: 600px;
     width: 100%;
     display: flex;
     align-items: flex-end;
   }
-
   .caseStudy2 {
     background-image: url("../images/craftpop4.png");
     background-size: cover;
@@ -120,6 +118,4 @@ span {
     background-position: center;
     margin-top: 100px;
   }
-
 }
-
