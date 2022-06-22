@@ -34,12 +34,14 @@ span {
     gap: 40px;
     padding: 40px;
   }
+
   .caseStudy1, .caseStudy2, .caseStudy3, .caseStudy4 {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: flex-end;
   }
+
   .caseStudy1 {
     background-image: url("../images/Girlstart\ Home\ Image.png");
     background-size: cover;
@@ -65,6 +67,7 @@ span {
     background-repeat: no-repeat;
     background-position: center;
   }
+
   .text {
     background: rgb(0,0,0,0.7);
     width: 100%;
@@ -80,8 +83,7 @@ span {
   .text h1 {
     font-family: 'Lato', Arial, Helvetica, sans-serf;
   }
-
-footer {
+  footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,3 +94,32 @@ footer {
     color: white;
     font-weight: bold;
 }
+
+
+/*This is Elizabeth's code*/
+@media only screen and (max-width: 600px) {
+  .caseStudyGrid {
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .caseStudy1, .caseStudy2, .caseStudy3, .caseStudy4 {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .caseStudy2 {
+    background-image: url("../images/craftpop4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 100px;
+  }
+
+}
+
