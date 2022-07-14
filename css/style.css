@@ -1,12 +1,18 @@
+/* This is the Home page of Portfolio */
+
+/*Navigation Bar*/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(0,0,0,0.7);
+    background: rgb(64, 64, 64);
+    position: fixed;
+    width: 100%;
     padding: 20px;
+    z-index: 5;
 }
 
-span {
+span a {
   color: white;
   font-family: 'Lato', Arial, Helvetica, sans-serf;
   font-weight: bold;
@@ -21,11 +27,49 @@ span {
     margin-left: 10px;
 }
 
-.navMenu li a {
+.navMenu li {
     color: white;
     font-family: 'Lato', Arial, Helvetica, sans-serf;
     font-weight: bold;
 }
+
+.navMenu button {
+  background-color: rgb(64, 64, 64);
+  border: none;
+  color: white;
+  font-family: 'Lato', Arial, Helvetica, sans-serf;
+  font-weight: bold;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Meatsunset.jpg");
+  width: 100%;
+  /* Set a specific height */
+  height: 500px;
+
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Lato', Arial, Helvetica, sans-serf;
+  font-weight: bold;
+}
+
+/*Starting My Code*/
 
 .caseStudyGrid {
     display: grid;
@@ -94,7 +138,15 @@ span {
     font-weight: bold;
 }
 
-/*This is the index.html page's media query code*/
+/*This is the Case Study Projects' css*/
+.caseStudyBlock {
+  display: flex;
+}
+
+
+
+
+/*This is the index.html page's media query code for mobile*/
 @media only screen and (max-width: 600px) {
   .caseStudyGrid {
     display: grid;
@@ -123,6 +175,3 @@ span {
   }
 }
 
-/*This is the About.html page's media query code*/
-/*This is the Resume.html page's media query code*/
-/*This is the Contact.html page's media query code*/

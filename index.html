@@ -14,27 +14,38 @@
     <header>
         <nav>
             <span>
-                <a href="index.html">Megan E. Petty</a>
+                <a href="#">Megan E. Petty</a>
             </span>
             <ul class="navMenu">
                 <li>
-                    <a href="#">Projects</a>
+                    <button onclick="down1()">Case Studies</button>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <button onclick="down2()">Playground</button>
                 </li>
                 <li>
-                    <a href="resume.html">Resume</a>
+                    <button onclick="down3()">Resume</button>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <button onclick="down4()">About</button>
+                </li>
+                <li>
+                    <button onclick="down5()">Contact</button>
                 </li>
             </ul>
         </nav>
     </header>
 
-     <!-- Case Study Grid Layout -->
-     <div class="caseStudyGrid">
+     <!-- Hero Image -->
+     <section class="hero-image">
+        <div class="hero-text">
+          <h1>I am Megan Petty</h1>
+          <p>...and I apply user-centric, design-thinking to identify and fill in the gaps of user needs!</p>
+        </div>
+    </section>
+
+    <!-- Case Study Grid Layout -->
+     <section id="caseStudies" class="caseStudyGrid">
         <div class="caseStudy1">
             <div class="text">
                 <h1>Girlstart Case Study</h1>
@@ -59,13 +70,25 @@
                     <p>Travel App</p>
                 </div>
        </div>
-    </div>
+     </section>
+
+    <section id="playground">
+        <img src="./images/propic1.png">
+    </section>
+
+    <section id="Resume">
+        <img src="./images/propic1.png">
+    </section>
     
-    <footer>
-        <div>        
-            <img src="../UX_UI_HW_17/images/propic1.png">
-            </div>
+    <section id="About">
+        <img src="./images/propic1.png">
+    </section>
+
+    <!-- Footer w/ Contact Bar -->
+    <footer id="Contact">
         <div>
+            <img src="./images/propic1.png">
+        </div>
             <p>
                 Megan E. Petty<br/>UX | UI Designer<br/>Austin, TX
             </p>
@@ -82,5 +105,6 @@
             
         </div>
     </footer>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
